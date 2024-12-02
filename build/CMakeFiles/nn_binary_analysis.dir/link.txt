@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnn_binary_analysis.a CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o
+/usr/bin/ranlib libnn_binary_analysis.a

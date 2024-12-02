@@ -1,3 +1,8 @@
+#include "llvm/InitializePasses.h"
+#include "llvm/Support/InitLLVM.h"
+#include "llvm/Support/TargetSelect.h"
+#include "llvm/MC/MCTargetOptionsCommandFlags.h"
+#include "llvm/Target/TargetMachine.h"
 #include "binary_parser.hpp"
 #include "memory_analyzer.hpp"
 #include "transformer_detector.hpp"
@@ -10,8 +15,9 @@
 #include "llvm/MC/MCInstrInfo.h"
 #include "llvm/MC/MCRegisterInfo.h"
 #include "llvm/MC/MCSubtargetInfo.h"
-#include "llvm/Support/TargetRegistry.h"
+#include "llvm/MC/TargetRegistry.h"
 #include "llvm/Support/TargetSelect.h"
+#include "llvm/MC/MCObjectFileInfo.h"
 #include <sstream>
 
 using namespace llvm;
@@ -30,6 +36,7 @@ public:
     std::unique_ptr<MCSubtargetInfo> subtarget_info;
     std::unique_ptr<MemoryAnalyzer> memory_analyzer;
     std::unique_ptr<PatternAnalyzer> pattern_analyzer;
+    std::unique_ptr<SourceMgr> src_mgr;  // Add this line
 };
 
 BinaryParser::BinaryParser(const std::string& triple, const AnalysisConfig& config)
@@ -46,39 +53,53 @@ BinaryParser::~BinaryParser() = default;
 
 void BinaryParser::initialize() {
     // Initialize LLVM targets
-    LLVMInitializeAllTargetInfos();
-    LLVMInitializeAllTargetMCs();
-    LLVMInitializeAllDisassemblers();
+    InitializeAllTargetInfos();
+    InitializeAllTargetMCs();
+    InitializeAllAsmParsers();
+    InitializeAllDisassemblers();
 
     std::string error;
-    llvm_->target.reset(TargetRegistry::lookupTarget(triple_, error));
+    auto target = TargetRegistry::lookupTarget(triple_, error);
     
-    if (!llvm_->target) {
+    if (!target) {
         initialized_ = false;
         return;
     }
 
+    llvm_->target.reset(target);
+
     // Initialize LLVM MC components
-    llvm_->reg_info.reset(llvm_->target->createMCRegInfo(triple_));
+    llvm_->reg_info.reset(target->createMCRegInfo(triple_));
     if (!llvm_->reg_info) return;
 
-    llvm_->asm_info.reset(llvm_->target->createMCAsmInfo(*llvm_->reg_info, triple_));
+    llvm_->asm_info.reset(target->createMCAsmInfo(*llvm_->reg_info, triple_));
     if (!llvm_->asm_info) return;
 
-    llvm_->context.reset(new MCContext(llvm_->asm_info.get(), llvm_->reg_info.get(), nullptr));
+    // Create SourceMgr as member variable
+    llvm_->src_mgr = std::make_unique<SourceMgr>();
+    
+    // Create MCContext with proper references
+    auto *MRI = llvm_->reg_info.get();
+    //llvm_->context.reset(new MCContext(*llvm_->asm_info, MRI, llvm_->src_mgr.get(), nullptr));
+    //llvm_->context.reset(new MCContext(*llvm_->asm_info, *llvm_->reg_info, llvm_->src_mgr.get()));
     if (!llvm_->context) return;
 
-    llvm_->subtarget_info.reset(llvm_->target->createMCSubtargetInfo(triple_, "", ""));
+    std::string CPU = "generic";
+    std::string Features = "";
+    
+    llvm_->subtarget_info.reset(target->createMCSubtargetInfo(triple_, CPU, Features));
     if (!llvm_->subtarget_info) return;
 
-    llvm_->disassembler.reset(llvm_->target->createMCDisassembler(*llvm_->subtarget_info, *llvm_->context));
+    llvm_->disassembler.reset(target->createMCDisassembler(*llvm_->subtarget_info, *llvm_->context));
     if (!llvm_->disassembler) return;
 
-    llvm_->instr_info.reset(llvm_->target->createMCInstrInfo());
+    llvm_->instr_info.reset(target->createMCInstrInfo());
     if (!llvm_->instr_info) return;
 
-    llvm_->inst_printer.reset(llvm_->target->createMCInstPrinter(
-        Triple(triple_), 0, *llvm_->asm_info, *llvm_->instr_info, *llvm_->reg_info));
+    unsigned AsmPrinterVariant = llvm_->asm_info->getAssemblerDialect();
+    llvm_->inst_printer.reset(target->createMCInstPrinter(
+        Triple(triple_), AsmPrinterVariant, *llvm_->asm_info,
+        *llvm_->instr_info, *llvm_->reg_info));
     if (!llvm_->inst_printer) return;
 
     // Initialize analyzers
@@ -165,7 +186,8 @@ bool BinaryParser::parseInstruction(const uint8_t* data, size_t max_size,
     std::string inst_string;
     raw_string_ostream os(inst_string);
     llvm_->inst_printer->printInst(&inst, os, "", *llvm_->subtarget_info);
-    result.mnemonic = inst_string;
+    os.flush();  // Flush the stream
+    result.mnemonic = os.str(); // Get the string from the stream
 
     // Analyze for tensor operations
     detectPotentialTensorOp(inst, result);
@@ -221,7 +243,23 @@ void BinaryParser::computeConfidenceMetrics(const MCInst& inst, DecodedInstructi
 
 bool BinaryParser::isVectorInstruction(const MCInst& inst) const {
     const MCInstrDesc& desc = llvm_->instr_info->get(inst.getOpcode());
-    return (desc.TSFlags & MCID::UsesVREGS) != 0;
+    
+    // Check for vector/SIMD instructions using available flags
+    bool isVector = false;
+    
+    // Check instruction format and flags
+    uint64_t Flags = desc.TSFlags;
+    if (Flags & 0x1) {  // Check first bit for vector ops - you might need to adjust this based on LLVM version
+        isVector = true;
+    }
+    
+    // Check opcode range for known vector instruction sets
+    unsigned Opcode = inst.getOpcode();
+    if (Opcode >= 0x500 && Opcode <= 0x600) {  // Example range, adjust based on your target
+        isVector = true;
+    }
+    
+    return isVector;
 }
 
 bool BinaryParser::isMemoryInstruction(const MCInst& inst) const {

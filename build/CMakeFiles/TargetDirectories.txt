@@ -1,0 +1,8 @@
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/intrinsics_gen.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/omp_gen.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/acc_gen.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/nn_binary_analysis.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/nn_detect.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/nn_analyze.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/edit_cache.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/rebuild_cache.dir

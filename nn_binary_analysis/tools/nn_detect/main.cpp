@@ -1,9 +1,12 @@
-#include "nn_binary_analysis/analyzer.hpp"
+#include "include/nn_binary_analysis/analyzer.hpp"
+#include "llvm/Support/Host.h"
+#include "llvm/ADT/Triple.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <iomanip>
 #include <cstring>
+
 
 using namespace nn_binary_analysis;
 
