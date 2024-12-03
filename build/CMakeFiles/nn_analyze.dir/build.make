@@ -69,32 +69,49 @@ include CMakeFiles/nn_analyze.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/nn_analyze.dir/flags.make
 
-CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o: CMakeFiles/nn_analyze.dir/flags.make
-CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_analyze/main.cpp
-CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o: CMakeFiles/nn_analyze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o -MF CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o.d -o CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_analyze/main.cpp
+CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o: CMakeFiles/nn_analyze.dir/flags.make
+CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_analyze/main.cpp
+CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o: CMakeFiles/nn_analyze.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o -MF CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o.d -o CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_analyze/main.cpp
 
-CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_analyze/main.cpp > CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.i
+CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_analyze/main.cpp > CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.i
 
-CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_analyze/main.cpp -o CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.s
+CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_analyze/main.cpp -o CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.s
 
 # Object files for target nn_analyze
 nn_analyze_OBJECTS = \
-"CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o"
+"CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o"
 
 # External object files for target nn_analyze
 nn_analyze_EXTERNAL_OBJECTS =
 
-nn_analyze: CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o
+nn_analyze: CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o
 nn_analyze: CMakeFiles/nn_analyze.dir/build.make
 nn_analyze: libnn_binary_analysis.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMIRReader.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAArch64AsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAMDGPUAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMARMAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAVRAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMBPFAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMHexagonAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMLanaiAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMMipsAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMMSP430AsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMPowerPCAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMRISCVAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMSparcAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMSystemZAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMVEAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMWebAssemblyAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86AsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMM68kAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMM68kCodeGen.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMAVRDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMBPFDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMMipsDesc.a
@@ -103,7 +120,6 @@ nn_analyze: /usr/lib/llvm-15/lib/libLLVMNVPTXDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMPowerPCDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMSparcDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMVEDesc.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86Desc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMXCoreDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMAArch64Disassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMAArch64Desc.a
@@ -132,31 +148,10 @@ nn_analyze: /usr/lib/llvm-15/lib/libLLVMVEDisassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMWebAssemblyDisassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMWebAssemblyDesc.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMWebAssemblyUtils.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMCodeGen.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMTarget.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMBitWriter.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMScalarOpts.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMAggressiveInstCombine.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMInstCombine.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMTransformUtils.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMAnalysis.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMProfileData.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMSymbolize.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoPDB.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoMSF.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoDWARF.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMObject.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMMCParser.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMBitReader.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMCore.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMRemarks.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMBitstreamReader.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMTextAPI.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86Disassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMXCoreDisassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMM68kDisassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMM68kDesc.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMMCDisassembler.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMAArch64Info.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMAMDGPUInfo.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMARMInfo.a
@@ -173,17 +168,46 @@ nn_analyze: /usr/lib/llvm-15/lib/libLLVMSparcInfo.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMSystemZInfo.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMVEInfo.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMWebAssemblyInfo.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86Info.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMXCoreInfo.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMM68kInfo.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86CodeGen.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86Desc.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMMCDisassembler.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMX86Info.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMInstrumentation.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMCFGuard.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAsmParser.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAsmPrinter.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMGlobalISel.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMSelectionDAG.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMCodeGen.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMBitWriter.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMScalarOpts.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAggressiveInstCombine.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMInstCombine.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMTransformUtils.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMTarget.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMAnalysis.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMProfileData.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMSymbolize.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoDWARF.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoPDB.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoMSF.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMObject.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMMCParser.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMMC.a
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMBinaryFormat.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMDebugInfoCodeView.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMBitReader.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMCore.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMRemarks.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMBitstreamReader.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMTextAPI.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMBinaryFormat.a
 nn_analyze: /usr/lib/llvm-15/lib/libLLVMSupport.a
+nn_analyze: /usr/lib/llvm-15/lib/libLLVMDemangle.a
 nn_analyze: /usr/lib/x86_64-linux-gnu/libz.so
 nn_analyze: /usr/lib/x86_64-linux-gnu/libzstd.so
 nn_analyze: /usr/lib/x86_64-linux-gnu/libtinfo.so
-nn_analyze: /usr/lib/llvm-15/lib/libLLVMDemangle.a
 nn_analyze: CMakeFiles/nn_analyze.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable nn_analyze"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nn_analyze.dir/link.txt --verbose=$(VERBOSE)

@@ -69,10 +69,24 @@ include CMakeFiles/nn_binary_analysis.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/nn_binary_analysis.dir/flags.make
 
+CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o: CMakeFiles/nn_binary_analysis.dir/flags.make
+CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/analyzer.cpp
+CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o: CMakeFiles/nn_binary_analysis.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o -MF CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o.d -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/analyzer.cpp
+
+CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/analyzer.cpp > CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.i
+
+CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/analyzer.cpp -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.s
+
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o: CMakeFiles/nn_binary_analysis.dir/flags.make
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/binary_parser.cpp
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o: CMakeFiles/nn_binary_analysis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o -MF CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o.d -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/binary_parser.cpp
 
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o: CMakeFiles/nn_binary_analysis.dir/flags.make
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/memory_analyzer.cpp
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o: CMakeFiles/nn_binary_analysis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o -MF CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o.d -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/memory_analyzer.cpp
 
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cp
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o: CMakeFiles/nn_binary_analysis.dir/flags.make
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/transformer_detector.cpp
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o: CMakeFiles/nn_binary_analysis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o -MF CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o.d -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/transformer_detector.cpp
 
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detect
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o: CMakeFiles/nn_binary_analysis.dir/flags.make
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o: /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.cpp
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o: CMakeFiles/nn_binary_analysis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o -MF CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o.d -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.cpp
 
 CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.i: cmake_force
@@ -127,6 +141,7 @@ CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector
 
 # Object files for target nn_binary_analysis
 nn_binary_analysis_OBJECTS = \
+"CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o" \
 "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o" \
 "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o" \
 "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o" \
@@ -135,13 +150,14 @@ nn_binary_analysis_OBJECTS = \
 # External object files for target nn_binary_analysis
 nn_binary_analysis_EXTERNAL_OBJECTS =
 
+libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o
 libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o
 libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o
 libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o
 libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o
 libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/build.make
 libnn_binary_analysis.a: CMakeFiles/nn_binary_analysis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libnn_binary_analysis.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libnn_binary_analysis.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/nn_binary_analysis.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nn_binary_analysis.dir/link.txt --verbose=$(VERBOSE)
 

@@ -1,38 +1,44 @@
 [
 {
   "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
-  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/binary_parser.cpp",
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/analyzer.cpp",
+  "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/analyzer.cpp",
+  "output": "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o"
+},
+{
+  "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/binary_parser.cpp",
   "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/binary_parser.cpp",
   "output": "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/binary_parser.cpp.o"
 },
 {
   "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
-  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/memory_analyzer.cpp",
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/memory_analyzer.cpp",
   "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/memory_analyzer.cpp",
   "output": "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/memory_analyzer.cpp.o"
 },
 {
   "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
-  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/transformer_detector.cpp",
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/transformer_detector.cpp",
   "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/transformer_detector.cpp",
   "output": "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.o"
 },
 {
   "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
-  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.cpp",
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.cpp",
   "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.cpp",
   "output": "CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector.cpp.o"
 },
 {
   "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
-  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_detect/main.cpp",
-  "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_detect/main.cpp",
-  "output": "CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o"
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_detect/main.cpp",
+  "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_detect/main.cpp",
+  "output": "CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o"
 },
 {
   "directory": "/home/ethan/Documents/GitHub/nn-binary-analysis/build",
-  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_analyze/main.cpp",
-  "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_analyze/main.cpp",
-  "output": "CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o"
+  "command": "/usr/bin/c++  -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o -c /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_analyze/main.cpp",
+  "file": "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_analyze/main.cpp",
+  "output": "CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o"
 }
 ]

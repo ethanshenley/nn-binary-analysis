@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/home/ethan/anaconda3/lib/python3.10/site-packages/cmake/data/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/home/ethan/anaconda3/lib/python3.10/site-packages/cmake/data/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/home/ethan/anaconda3/lib/python3.10/site-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/home/ethan/anaconda3/lib/python3.10/site-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/home/ethan/anaconda3/lib/python3.10/site-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/home/ethan/anaconda3/lib/python3.10/site-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles /home/ethan/Documents/GitHub/nn-binary-analysis/build//CMakeFiles/progress.marks
@@ -194,6 +239,30 @@ nn_analyze/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/build
 .PHONY : nn_analyze/fast
 
+nn_binary_analysis/src/core/analyzer.o: nn_binary_analysis/src/core/analyzer.cpp.o
+.PHONY : nn_binary_analysis/src/core/analyzer.o
+
+# target to build an object file
+nn_binary_analysis/src/core/analyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_binary_analysis.dir/build.make CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.o
+.PHONY : nn_binary_analysis/src/core/analyzer.cpp.o
+
+nn_binary_analysis/src/core/analyzer.i: nn_binary_analysis/src/core/analyzer.cpp.i
+.PHONY : nn_binary_analysis/src/core/analyzer.i
+
+# target to preprocess a source file
+nn_binary_analysis/src/core/analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_binary_analysis.dir/build.make CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.i
+.PHONY : nn_binary_analysis/src/core/analyzer.cpp.i
+
+nn_binary_analysis/src/core/analyzer.s: nn_binary_analysis/src/core/analyzer.cpp.s
+.PHONY : nn_binary_analysis/src/core/analyzer.s
+
+# target to generate assembly for a file
+nn_binary_analysis/src/core/analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_binary_analysis.dir/build.make CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/analyzer.cpp.s
+.PHONY : nn_binary_analysis/src/core/analyzer.cpp.s
+
 nn_binary_analysis/src/core/binary_parser.o: nn_binary_analysis/src/core/binary_parser.cpp.o
 .PHONY : nn_binary_analysis/src/core/binary_parser.o
 
@@ -290,53 +359,53 @@ nn_binary_analysis/src/core/transformer_detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_binary_analysis.dir/build.make CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/transformer_detector.cpp.s
 .PHONY : nn_binary_analysis/src/core/transformer_detector.cpp.s
 
-tools/nn_analyze/main.o: tools/nn_analyze/main.cpp.o
-.PHONY : tools/nn_analyze/main.o
+nn_binary_analysis/tools/nn_analyze/main.o: nn_binary_analysis/tools/nn_analyze/main.cpp.o
+.PHONY : nn_binary_analysis/tools/nn_analyze/main.o
 
 # target to build an object file
-tools/nn_analyze/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.o
-.PHONY : tools/nn_analyze/main.cpp.o
+nn_binary_analysis/tools/nn_analyze/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.o
+.PHONY : nn_binary_analysis/tools/nn_analyze/main.cpp.o
 
-tools/nn_analyze/main.i: tools/nn_analyze/main.cpp.i
-.PHONY : tools/nn_analyze/main.i
+nn_binary_analysis/tools/nn_analyze/main.i: nn_binary_analysis/tools/nn_analyze/main.cpp.i
+.PHONY : nn_binary_analysis/tools/nn_analyze/main.i
 
 # target to preprocess a source file
-tools/nn_analyze/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.i
-.PHONY : tools/nn_analyze/main.cpp.i
+nn_binary_analysis/tools/nn_analyze/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.i
+.PHONY : nn_binary_analysis/tools/nn_analyze/main.cpp.i
 
-tools/nn_analyze/main.s: tools/nn_analyze/main.cpp.s
-.PHONY : tools/nn_analyze/main.s
+nn_binary_analysis/tools/nn_analyze/main.s: nn_binary_analysis/tools/nn_analyze/main.cpp.s
+.PHONY : nn_binary_analysis/tools/nn_analyze/main.s
 
 # target to generate assembly for a file
-tools/nn_analyze/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/tools/nn_analyze/main.cpp.s
-.PHONY : tools/nn_analyze/main.cpp.s
+nn_binary_analysis/tools/nn_analyze/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_analyze.dir/build.make CMakeFiles/nn_analyze.dir/nn_binary_analysis/tools/nn_analyze/main.cpp.s
+.PHONY : nn_binary_analysis/tools/nn_analyze/main.cpp.s
 
-tools/nn_detect/main.o: tools/nn_detect/main.cpp.o
-.PHONY : tools/nn_detect/main.o
+nn_binary_analysis/tools/nn_detect/main.o: nn_binary_analysis/tools/nn_detect/main.cpp.o
+.PHONY : nn_binary_analysis/tools/nn_detect/main.o
 
 # target to build an object file
-tools/nn_detect/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_detect.dir/build.make CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o
-.PHONY : tools/nn_detect/main.cpp.o
+nn_binary_analysis/tools/nn_detect/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_detect.dir/build.make CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o
+.PHONY : nn_binary_analysis/tools/nn_detect/main.cpp.o
 
-tools/nn_detect/main.i: tools/nn_detect/main.cpp.i
-.PHONY : tools/nn_detect/main.i
+nn_binary_analysis/tools/nn_detect/main.i: nn_binary_analysis/tools/nn_detect/main.cpp.i
+.PHONY : nn_binary_analysis/tools/nn_detect/main.i
 
 # target to preprocess a source file
-tools/nn_detect/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_detect.dir/build.make CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.i
-.PHONY : tools/nn_detect/main.cpp.i
+nn_binary_analysis/tools/nn_detect/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_detect.dir/build.make CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.i
+.PHONY : nn_binary_analysis/tools/nn_detect/main.cpp.i
 
-tools/nn_detect/main.s: tools/nn_detect/main.cpp.s
-.PHONY : tools/nn_detect/main.s
+nn_binary_analysis/tools/nn_detect/main.s: nn_binary_analysis/tools/nn_detect/main.cpp.s
+.PHONY : nn_binary_analysis/tools/nn_detect/main.s
 
 # target to generate assembly for a file
-tools/nn_detect/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_detect.dir/build.make CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.s
-.PHONY : tools/nn_detect/main.cpp.s
+nn_binary_analysis/tools/nn_detect/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_detect.dir/build.make CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.s
+.PHONY : nn_binary_analysis/tools/nn_detect/main.cpp.s
 
 # Help Target
 help:
@@ -345,6 +414,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... acc_gen"
 	@echo "... intrinsics_gen"
@@ -352,6 +425,9 @@ help:
 	@echo "... nn_analyze"
 	@echo "... nn_binary_analysis"
 	@echo "... nn_detect"
+	@echo "... nn_binary_analysis/src/core/analyzer.o"
+	@echo "... nn_binary_analysis/src/core/analyzer.i"
+	@echo "... nn_binary_analysis/src/core/analyzer.s"
 	@echo "... nn_binary_analysis/src/core/binary_parser.o"
 	@echo "... nn_binary_analysis/src/core/binary_parser.i"
 	@echo "... nn_binary_analysis/src/core/binary_parser.s"
@@ -364,12 +440,12 @@ help:
 	@echo "... nn_binary_analysis/src/core/transformer_detector.o"
 	@echo "... nn_binary_analysis/src/core/transformer_detector.i"
 	@echo "... nn_binary_analysis/src/core/transformer_detector.s"
-	@echo "... tools/nn_analyze/main.o"
-	@echo "... tools/nn_analyze/main.i"
-	@echo "... tools/nn_analyze/main.s"
-	@echo "... tools/nn_detect/main.o"
-	@echo "... tools/nn_detect/main.i"
-	@echo "... tools/nn_detect/main.s"
+	@echo "... nn_binary_analysis/tools/nn_analyze/main.o"
+	@echo "... nn_binary_analysis/tools/nn_analyze/main.i"
+	@echo "... nn_binary_analysis/tools/nn_analyze/main.s"
+	@echo "... nn_binary_analysis/tools/nn_detect/main.o"
+	@echo "... nn_binary_analysis/tools/nn_detect/main.i"
+	@echo "... nn_binary_analysis/tools/nn_detect/main.s"
 .PHONY : help
 
 

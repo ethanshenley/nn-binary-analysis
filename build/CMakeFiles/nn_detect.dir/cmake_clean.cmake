@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o"
-  "CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o.d"
+  "CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o"
+  "CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o.d"
   "nn_detect"
   "nn_detect.pdb"
 )

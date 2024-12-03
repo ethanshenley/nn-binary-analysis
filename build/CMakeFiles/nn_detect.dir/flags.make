@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/usr/include/llvm-15 -I/usr/lib/llvm-15/include
+CXX_INCLUDES = -I/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include -I/home/ethan/Documents/GitHub/nn-binary-analysis/include -I/usr/lib/llvm-15/include
 
 CXX_FLAGS = -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 

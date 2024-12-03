@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ethan/Documents/GitHub/nn-binary-analysis/tools/nn_detect/main.cpp" "CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o" "gcc" "CMakeFiles/nn_detect.dir/tools/nn_detect/main.cpp.o.d"
+  "/home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/tools/nn_detect/main.cpp" "CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o" "gcc" "CMakeFiles/nn_detect.dir/nn_binary_analysis/tools/nn_detect/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

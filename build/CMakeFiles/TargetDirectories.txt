@@ -6,3 +6,7 @@
 /home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/nn_analyze.dir
 /home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/edit_cache.dir
 /home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/rebuild_cache.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/list_install_components.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/install.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/install/local.dir
+/home/ethan/Documents/GitHub/nn-binary-analysis/build/CMakeFiles/install/strip.dir
