@@ -2,7 +2,7 @@ CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector
  /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.cpp \
  /usr/include/stdc-predef.h \
  /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/src/core/framework_detector.hpp \
- /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include/../include/nn_binary_analysis/types.hpp \
+ /home/ethan/Documents/GitHub/nn-binary-analysis/nn_binary_analysis/include/nn_binary_analysis/types.hpp \
  /usr/include/c++/13/cstdint \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -226,4 +226,4 @@ CMakeFiles/nn_binary_analysis.dir/nn_binary_analysis/src/core/framework_detector
  /usr/include/c++/13/bits/regex_compiler.tcc \
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
- /usr/include/c++/13/bits/regex_executor.tcc
+ /usr/include/c++/13/bits/regex_executor.tcc /usr/include/c++/13/iostream
